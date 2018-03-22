@@ -7,7 +7,7 @@ $(document).ready(function(){
     var topics = ["hair", "diy", "homedecor", "food", "animals"]
 
 
-    var selectedTitles = ["Animals", "Architecture", "Art", "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film", "Food and drink", "Gardening", "Geek", "Hair", "Health", "History", "Holidays", "Home decor", "Humor", "Illustrations", "Kids", "Men's fashion", "Outdoors", "Photography", "Products", "Quotes", "Science", "Sports", "Tattoos", "Technology", "Travel"]
+    var selectedTitles = ["DIY and home improvement", "Architecture", "Art", "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film", "Food and drink", "Gardening", "Geek", "Hair", "Health", "History", "Holidays", "Home decor", "Humor", "Illustrations", "Kids", "Men's fashion", "Outdoors", "Photography", "Products", "Quotes", "Science", "Sports", "Tattoos", "Technology", "Travel"]
     var unselectedTitles = ["Animals", "Architecture", "Art",  "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film"]
 
     var colors = ["#F13535", "#E2780D", "#0FA573", "#B469EB", "#0A6955", "#8046A5", "#004B91", "#364A4C", "#133A5E", "#5B2677", "#6E0F3C"]
@@ -188,6 +188,10 @@ $(document).ready(function(){
 
     
         var num=0;
+
+    $(".done").click(function() {
+        alert("Nice picks! This is the end of this prototype")
+    })
 
 
     

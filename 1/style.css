@@ -95,16 +95,16 @@ h2 {
 
 
 .topicText {
-    position: absolute;
     font-size: 18px;
     font-weight: 800;
     color: #FFF;
     margin: 0 auto;
-    padding: 14% 24px;
-    width: auto;
+    padding-left: 24px;
+    padding-top: 6px;
+    width: 236px;
     height: 80px;
-    text-align: center;
-    display: inline-block;
+    text-align: left;
+    display: table-cell;
     vertical-align: middle;
 }
 
@@ -170,8 +170,12 @@ h2 {
 .mask {
     background-color: rgba(0,0,0,0);
     height: 80px;
+    width: 236px;
     border-radius: 8px;
+    position: absolute;
     cursor: pointer;
+    top: 0;
+
 }
 
 .modal {
