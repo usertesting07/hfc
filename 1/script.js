@@ -6,8 +6,13 @@ $(document).ready(function(){
 
     var topics = ["hair", "diy", "homedecor", "food", "animals"]
 
-    var topicTitles = ["Animals", "Architecture", "Art", "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film", "Food and drink", "Gardening", "Geek", "Hair", "Health", "History", "Holidays", "Home decor", "Humor", "Illustrations", "Kids", "Men's fashion", "Outdoors", "Photography", "Products", "Quotes", "Science", "Sports", "Tattoos", "Technology", "Travel"]
+
+    var selectedTitles = ["Animals", "Architecture", "Art", "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film", "Food and drink", "Gardening", "Geek", "Hair", "Health", "History", "Holidays", "Home decor", "Humor", "Illustrations", "Kids", "Men's fashion", "Outdoors", "Photography", "Products", "Quotes", "Science", "Sports", "Tattoos", "Technology", "Travel"]
+    var unselectedTitles = ["Animals", "Architecture", "Art",  "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film"]
+
     var colors = ["#F13535", "#E2780D", "#0FA573", "#B469EB", "#0A6955", "#8046A5", "#004B91", "#364A4C", "#133A5E", "#5B2677", "#6E0F3C"]
+
+    var titleListFor = {"selected": selectedTitles, "unselected": unselectedTitles}
 
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -86,7 +91,7 @@ $(document).ready(function(){
         /*$topic.css("background-image", "url('"+"https://unsplash.it/"+(106+i)+"/?random"+"')");
         */
         var $topicText = $(document.createElement("div")).addClass("topicText");
-        title = topicTitles[i]
+        title = titleListFor[selectionState][i]
         $topicText.text(title)
 
 
@@ -146,8 +151,9 @@ $(document).ready(function(){
         }
     }
 
-    var loadTopics = function (n, selectionState) {
-        for (i=0; i<n; i++) {
+    var loadTopics = function (selectionState) {
+        var length = titleListFor[selectionState].length
+        for (i=0; i<length; i++) {
             $topic = createTopic(selectionState, i);
 
             $topic.find('.topicText').click(function(evt) {
@@ -185,9 +191,9 @@ $(document).ready(function(){
 
 
     
-    loadTopics(30, "selected");
+    loadTopics("selected");
 
-    loadTopics(30, "unselected");
+    loadTopics("unselected");
     
 })
 
