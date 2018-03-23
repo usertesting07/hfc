@@ -7,9 +7,10 @@ $(document).ready(function(){
     var topics = ["hair", "diy", "homedecor", "food", "animals"]
 
 
-    var selectedTitles = ["DIY and home improvement", "Architecture", "Art", "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film", "Food and drink", "Gardening", "Geek", "Hair", "Health", "History", "Holidays", "Home decor", "Humor", "Illustrations", "Kids", "Men's fashion", "Outdoors", "Photography", "Products", "Quotes", "Science", "Sports", "Tattoos", "Technology", "Travel"]
-    var unselectedTitles = ["Animals", "Architecture", "Art",  "Cars", "Celebrities", "DIY and crafts", "Design", "Education", "Film"]
-
+    //Gara's coteries
+    var selectedTitles = ['sweets', 'dessert', 'holiday recipes', 'snacks', 'fast recipes', 'herb recipes', 'pork recipes', 'beef recipes', 'holidays', 'special recipes', 'healthy recipes', 'barbecue', 'inspirational quotes', 'diet and nutrition', 'gluten free', 'wisdom', 'motivational quotes', 'life quotes', 'world cuisine', 'clothes', 'funny quotes', 'wedding shoes', 'fruit recipes', 'other meat recipes', 'makeup', 'industrial design', 'celebrations', 'chicken recipes', 'hair care', 'articles']
+    var unselectedTitles = ['jewelry and beading', 'love quotes', 'books', 'side dish recipes', 'history', 'humor', 'social studies resources', 'wedding flowers', 'wedding dresses', 'earrings', 'birds', 'wedding cakes', 'lawn and garden', 'handmade jewelry', 'single parenting', 'music', 'bread and pastries', 'designers', 'apparel design', 'running', 'fruit', 'wedding rings', 'outdoor sports', 'personal care', 'diy projects', 'photography tips', 'travel destinations', 'vegan recipes', 'pasta', 'interior design']
+    
     var colors = ["#F13535", "#E2780D", "#0FA573", "#B469EB", "#0A6955", "#8046A5", "#004B91", "#364A4C", "#133A5E", "#5B2677", "#6E0F3C"]
 
     var titleListFor = {"selected": selectedTitles, "unselected": unselectedTitles}
@@ -69,20 +70,6 @@ $(document).ready(function(){
 
     }
 
-    var getTallestPin = function () {
-        var height = 0
-        for (i=0; i<numCols; i++) {
-            //console.log( $($(".col")[i])[0].children )
-            $last = $($($(".col")[i])[0].children)
-            pinHeight = ($last.find("img"))[0].height
-            if (pinHeight > height) {
-                height = pinHeight
-            }
-        }
-
-        return height
-        
-    }
 
 
     var numColor = 0;
@@ -92,6 +79,7 @@ $(document).ready(function(){
         */
         var $topicText = $(document.createElement("div")).addClass("topicText");
         title = titleListFor[selectionState][i]
+        title = title.substring(0,1).toUpperCase()+title.substring(1)
         $topicText.text(title)
 
 
