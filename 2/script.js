@@ -9,10 +9,11 @@ $(document).ready(function(){
 
     //Alex's coteries
     var selectedTitles = ['clothes', 'hair care', 'articles', 'celebrities', 'architectural styles', 'makeup']
+    var unselectedTitles = ['Food and drink', 'Home decor', 'Humor', 'Quotes', 'Travel', 'Health and fitness', 'Art', 'Animals', 'DIY home decor']
 
     var colors = ["#F13535", "#E2780D", "#0FA573", "#B469EB", "#0A6955", "#8046A5", "#004B91", "#364A4C", "#133A5E", "#5B2677", "#6E0F3C"]
 
-    var titleListFor = {"selected": selectedTitles}
+    var titleListFor = {"selected": selectedTitles, "unselected": unselectedTitles}
 
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -183,6 +184,7 @@ $(document).ready(function(){
 
     
     loadTopics("selected");
+    loadTopics("unselected");
 
     
 })
