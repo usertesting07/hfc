@@ -7,12 +7,13 @@ $(document).ready(function(){
     var topics = ["hair", "diy", "homedecor", "food", "animals"]
 
 
-    //Alex's coteries
-    var selectedTitles = ['clothes', 'hair care', 'articles', 'celebrities', 'architectural styles', 'makeup']
-
+    //Gara's coteries
+    var selectedTitles = ['sweets', 'dessert', 'holiday recipes', 'snacks', 'fast recipes', 'herb recipes', 'pork recipes', 'beef recipes', 'holidays', 'special recipes', 'healthy recipes', 'barbecue', 'inspirational quotes', 'diet and nutrition', 'gluten free', 'wisdom', 'motivational quotes', 'life quotes', 'world cuisine', 'clothes', 'funny quotes', 'wedding shoes', 'fruit recipes', 'other meat recipes', 'makeup', 'industrial design', 'celebrations', 'chicken recipes', 'hair care', 'articles']
+    var unselectedTitles = ['jewelry and beading', 'love quotes', 'books', 'side dish recipes', 'history', 'humor', 'social studies resources', 'wedding flowers', 'wedding dresses', 'earrings', 'birds', 'wedding cakes', 'lawn and garden', 'handmade jewelry', 'single parenting', 'music', 'bread and pastries', 'designers', 'apparel design', 'running', 'fruit', 'wedding rings', 'outdoor sports', 'personal care', 'diy projects', 'photography tips', 'travel destinations', 'vegan recipes', 'pasta', 'interior design']
+    
     var colors = ["#F13535", "#E2780D", "#0FA573", "#B469EB", "#0A6955", "#8046A5", "#004B91", "#364A4C", "#133A5E", "#5B2677", "#6E0F3C"]
 
-    var titleListFor = {"selected": selectedTitles}
+    var titleListFor = {"selected": selectedTitles, "unselected": unselectedTitles}
 
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -184,6 +185,7 @@ $(document).ready(function(){
     
     loadTopics("selected");
 
+    loadTopics("unselected");
     
 })
 

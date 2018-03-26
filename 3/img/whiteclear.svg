@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>• Icons/clear</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.182,16.95 L12,13.768 L8.819,16.95 C8.33,17.438 7.538,17.438 7.05,16.95 C6.563,16.462 6.563,15.671 7.05,15.182 L10.233,12 L7.05,8.818 C6.563,8.33 6.563,7.539 7.05,7.051 C7.538,6.562 8.33,6.562 8.819,7.051 L12,10.233 L15.182,7.051 C15.67,6.562 16.462,6.562 16.951,7.051 C17.438,7.539 17.438,8.33 16.951,8.818 L13.768,12 L16.951,15.182 C17.438,15.671 17.438,16.462 16.951,16.95 C16.462,17.438 15.67,17.438 15.182,16.95 M24,12 C24,5.373 18.627,0 12,0 C5.372,0 0,5.373 0,12 C0,18.628 5.373,24 12,24 C18.628,24 24,18.628 24,12" id="path-1"></path>
+    </defs>
+    <g id="1.-Topic-Picker,-automatic-Copy-18" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-730.000000, -531.000000)">
+        <g id="•-Icons/clear" transform="translate(730.000000, 531.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="clear" fill="#B5B5B5" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <g id="•-Override/~master-color-/~icon-color/white" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                <g id="•-Override/~master-color/white">
+                    <rect id="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+                    <rect id="#FFFFFF" x="0" y="0" width="6" height="6"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
