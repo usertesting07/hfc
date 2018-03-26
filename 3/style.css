@@ -46,6 +46,7 @@ h2 {
 }
 
 .tp {
+    max-width: 810px;
     max-width: 800px;
     background-color: #FFFFFF;
     height: 640px;
@@ -72,6 +73,7 @@ h2 {
     margin-top: 0px;
     margin-left: -4px;
     height: 89.5%;
+    width: 105%;
 }
 
 
