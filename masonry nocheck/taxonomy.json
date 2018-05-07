@@ -1,0 +1,46 @@
+data = '[
+  {"art": 
+    [
+      "doodles", 
+      "photoshop"
+    ]}, 
+  {"entertainment": 
+  [
+    "articles"
+  ]}, 
+  {"home and garden": [
+    "living room", 
+    "modern decoration", 
+    "decoration", 
+    "furniture", 
+    "mid century modern", 
+    "chair", 
+    "bedroom"
+  ]}, 
+  {"design": [
+    "calligraphy", 
+    "typography", 
+    "tattoos", 
+    "logo and identity", 
+    "industrial design", 
+    "poster designs", 
+    "digital media", 
+    "interaction design", 
+    "web and app design", 
+    "graphic design", 
+    "icon illustrations"
+  ]}, 
+  {"architecture": [
+    "cultural architecture", 
+    "house plans"
+  ]}, 
+  {"diy and crafts": [
+    "scrapbooking", 
+    "woodworking", 
+    "cross stitch"
+  ]}, 
+  {"education": [
+    "science resources", 
+    "art education resources"
+  ]}
+]'
